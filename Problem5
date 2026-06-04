@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class ex5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Is server running? (true/false): ");
+        boolean server = sc.nextBoolean();
+
+        System.out.print("Is database connected? (true/false): ");
+        boolean database = sc.nextBoolean();
+
+        if (!server) {
+            System.out.println("Critical Error");
+        } else if (!database) {
+            System.out.println("Database Error");
+        } else {
+            System.out.println("System Running Normally");
+        }
+    }
+}
